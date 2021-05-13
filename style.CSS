@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Girassol&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap");
 * {
   padding: 0%;
   margin: 0%;
@@ -8,16 +11,75 @@ body::-webkit-scrollbar {
   background: none;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Girassol&display=swap");
-
 #No1 {
-  background-color: #0b090a;
+  background-color: #1c1c1c;
 }
 
-#No2 {
-  background-color: black;
-  background-repeat: repeat;
+.footer {
+  position: fixed;
+  bottom: 3%;
+  right: 5%;
+  z-index: 9999;
+  color: #f5f3f4;
+}
+
+.header {
+  position: fixed;
+  top: 3%;
+  right: 75%;
+  color: #f5f3f4;
+  z-index: 9999;
+}
+
+.b {
+  color: #f5f3f4;
+  transition: 0.3s ease-in;
+  margin-right: 1rem;
+}
+
+.b:hover {
+  color: #c32865;
+}
+
+.email {
+  font-family: "Montserrat";
+  font-weight: 800;
+  color: #f5f3f4;
+}
+
+#No2 .fp-tableCell {
+  display: flex;
+  flex-direction: column;
   background-size: cover;
+  padding-left: 10%;
+  background-image: url("./Adam-Africa-2-ConvertImage.jpg");
+  background-size: 100rem;
+  background-position-x: 40%;
+  background-position-y: 40%;
+}
+
+#No3 .fp-tableCell {
+  background-size: cover;
+  padding-left: 10%;
+  height: 200vh;
+  background-color: #1c1c1c;
+}
+
+#No4 {
+  background-image: url(./aesthetic/4.png);
+  background-size: cover;
+  padding-left: 10%;
+}
+
+#No5 {
+  background: #1c1c1c;
+  padding-left: 10%;
+}
+
+#No6 {
+  background-image: url(./Untitleddesign/2.png);
+  background-size: cover;
+  padding-left: 10%;
 }
 
 h1 {
@@ -34,23 +96,54 @@ h1 {
 }
 
 .sub {
-  color: #e5383b;
+  color: #c32865;
   font-size: 4rem;
   text-transform: uppercase;
 }
 
 h2 {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 2%;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  text-transform: uppercase;
   color: #f5f3f4;
   font-size: 4rem;
   font-family: sans-serif;
+  animation: fadeIn linear 5s;
+  animation-direction: alternate;
+  -webkit-animation: fadeIn linear 5s;
+  -moz-animation: fadeIn linear 5s;
 }
 
-section {
-  background-color: black;
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .logo {
@@ -62,22 +155,244 @@ section {
   height: 50%;
   width: 50%;
 }
+
 #fp-nav ul li a.active span {
-  background-color: #e5383b;
+  background-color: #c32865;
   transition: all 0.1s ease-in-out;
 }
 
 .bio {
-  font-size: 1rem;
+  display: inline-block;
+  width: fit-content;
+  padding: 1rem;
+  margin-left: 15%;
+  font-size: 130%;
+  font-weight: 800;
   color: white;
+  text-align: end;
+  font-family: "Montserrat";
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  transition: 0.3s ease-in;
 }
 
-.me {
+.bio:hover {
+  color: white;
+  background-color: #c32865;
+}
+
+.T {
+  color: white;
+  text-transform: uppercase;
+  /* font-size: 2rem; */
+  /* font-weight: bolder; */
+  font-size: 3rem;
+  font-family: "Comfortaa";
+  padding-right: 40%;
+  /* padding-bottom: 30%; */
+  margin-bottom: 50%;
+  position: absolute;
+  left: 45%;
+  top: -10%;
+}
+
+.passion {
+  display: inline-block;
+  width: fit-content;
+  padding: 1rem;
+  margin-left: 45%;
+  font-size: 130%;
+  font-weight: 800;
+  color: white;
+  text-align: end;
+  font-family: "Montserrat";
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  transition: 0.3s ease-in;
+}
+
+.passion:hover {
+  color: white;
+  background-color: #c32865;
+}
+
+.T2 {
+  color: white;
+  text-transform: uppercase;
+  /* font-size: 2rem; */
+  /* font-weight: bolder; */
+  font-size: 3rem;
+  font-family: "Comfortaa";
+  padding-right: 40%;
+  /* padding-bottom: 30%; */
+  margin-bottom: 50%;
+  position: absolute;
+  left: 45%;
+  top: -10%;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#b {
+  color: #f5f3f4;
+  transition: 0.3s ease-in;
+  display: flex;
+  margin-right: 1rem;
+}
+
+#b:hover {
+  color: #c32865;
+}
+
+/*.card-container{
+  background: rgba(40, 40, 40, 1);
+  width: 15%;
+  height: fit-content;
+}*/
+
+.card1 {
+  background: rgba(40, 40, 40, 1);
+  width: 20%;
+  position: absolute;
+  right: 60%;
+  top: 15%;
+}
+
+.card2 {
+  background: rgba(40, 40, 40, 1);
+  width: 20%;
+  position: absolute;
+  right: 37%;
+  top: 15%;
+}
+
+.card3 {
+  background: rgba(40, 40, 40, 1);
+  width: 20%;
+  position: absolute;
+  right: 14%;
+  top: 15%;
+}
+
+.card4 {
+  background: rgba(40, 40, 40, 1);
+  width: 20%;
+  position: absolute;
+  right: 60%;
+  top: 57%;
+}
+
+.card5 {
+  background: rgba(40, 40, 40, 1);
+  width: 20%;
+  position: absolute;
+  right: 37%;
+  top: 57%;
+}
+
+.card6 {
+  background: rgba(40, 40, 40, 1);
+  width: 20%;
+  position: absolute;
+  right: 14%;
+  top: 57%;
+}
+
+.card-img {
+  width: 100%;
+}
+
+.card-head {
+  text-align: center;
+  font-size: 150%;
+  font-family: "Comfortaa";
+  color: #f5f3f4;
+}
+
+.card-details {
+  color: #f5f3f4;
+  font-family: "Montserrat";
+  font-size: 100%;
+  font-weight: 800;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.flex-container {
+  width: 100%;
+  display: flex;
+}
+
+.icons-container {
+  background: url(https://i.picsum.photos/id/1042/3456/5184.jpg?hmac=5xr8Veg2D_kEQQO6rvGj_Yk8s_N4iq3-eZ9_KclSXNQ);
+
+  width: 50%;
   display: flex;
   justify-content: center;
+  background-size: cover;
   align-items: center;
+  margin-left: 15%;
+  transition: 0.3s ease-in;
+}
 
-  width: 20%;
-  height: 40%;
-  border-radius: 50%;
+#crd {
+  transition: 0.3s ease-in-out;
+}
+
+#crd:hover {
+  background-color: #c32865;
+  width: 21%;
+}
+
+.button {
+  color: #f5f3f4;
+  transition: 0.3s ease-in;
+}
+
+.button:hover {
+  color: #1c1c1c;
+}
+
+form {
+  position: absolute;
+  top: 30%;
+  right: 45%;
+}
+.input {
+  background: #1c1c1c;
+  color: #f5f3f4;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  padding: 5% 10%;
+  border: none;
+  margin-bottom: 5%;
+  width: 120%;
+  outline: none;
+}
+
+button {
+  border: none;
+  color: #f5f3f4;
+  transition: 0.3s ease-in;
+}
+button:hover {
+  background-color: #c32865;
+}
+
+.info {
+  width: 100%;
+}
+
+.contact {
+  color: #c32865;
+  width: 100%;
+  text-transform: uppercase;
+  margin-bottom: 15%;
+  font-size: 3rem;
+  font-family: "Comfortaa";
 }

@@ -6,9 +6,21 @@
     <title>Adam Africa</title>
     <link rel="stylesheet" href="./style.CSS" />
     <link rel="stylesheet" href="./ugh.js" />
-
+    <link rel="icon" href="./favicon.png" type="image/icon type" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+    />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script
       src="https://kit.fontawesome.com/cce18f0ce0.js"
       crossorigin="anonymous"
@@ -19,54 +31,330 @@
     />
   </head>
   <body>
+    <!--Header-->
+    <div class="header"><span class="email">africa.adam1@gmail.com</span></div>
+    <!--Footer-->
+    <div class="footer">
+      <a href="https://github.com/Adam-smh" target="_blank" class="b"
+        ><i class="fab fa-github fa-3x"></i
+      ></a>
+
+      <a
+        href="https://www.linkedin.com/in/adam-africa-1086b91a3/"
+        target="_blank"
+        class="b"
+        ><i class="fab fa-linkedin-in fa-3x"></i
+      ></a>
+    </div>
     <main>
       <div id="fullPage">
+        <!--Landing Section-->
         <div class="section" id="No1">
-          <h1>Adam Africa,<span class="sub"> Portfolio </span></h1>
+          <h1
+            data-aos="fade-down"
+            data-aos-offset="500"
+            data-aos-duration="3000"
+          >
+            Adam Africa,<span class="sub">Portfolio</span>
+          </h1>
         </div>
-
+        <!--About Section-->
         <div class="section" id="No2">
-          <h2>About <span class="sub">Me</span></h2>
-          <img src="./Adam Africa (2).JPG" class="me" alt="" />
-          <p class="bio">
-            I am a competitive individual but am also able to reach out <br />
-            and receive help from others. <br />
-            I believe in having high standards but also being humble with what
-            you do. <br />
-            Being kind but not a pushover is a very important value to me.
+          <h2>About <span class="sub"> Me</span></h2>
+
+          <p class="bio" data-tilt>
+            <span class="T">bio</span> <br />
+            I am a competitive individual but am <br />also able to reach out
+            and receive help<br />
+            from others. I believe in having high <br />standards but also being
+            humble with<br />
+            what you do. Being kind but not a <br />
+            pushover is<br />
+            a very important value to me.<br />
+            I hope to change the world with my <br />
+            work but also have the capacity for patience<br />
+            in doing so.
+          </p>
+
+          <p class="passion" data-tilt>
+            <span class="T2">passion</span> My love for tech stems from my first
             <br />
-            I hope to change the world with my work but also have the capacity
-            for patience in doing so.
+            computer in 2009. <br />
+            It came with Windows XP and probably <br />
+            about 1GB of RAM. <br />
+            It was slow but I always had a <br />
+            huge fascination with the things you can do with it. <br />
+            It made me wonder what PCs would be like over <br />
+            time, and that is where my love <br />
+            for tech started and from then it was <br />
+            constantly evolving.
           </p>
         </div>
-
+        <!--Projects Section-->
         <div class="section" id="No3">
-          <h2>Previous <span class="sub"> Projects</span></h2>
+          <h2>Previous<span class="sub">Projects</span></h2>
+          <div class="card-container">
+            <div class="card1" id="crd">
+              <img class="card-img" src="./testi-slide.png" alt="" />
+              <h3 class="card-head">Testimonial Slider</h3>
+              <p class="card-details">
+                A Testimonial Slider made with HTML, CSS, Glassmorphism and
+                OwlCarousel2. This shows Testimonials said about me by my peers.
+              </p>
+              <div class="buttons">
+                <a
+                  href="https://friendly-bardeen-0dc788.netlify.app/"
+                  target="_blank"
+                  class="button"
+                >
+                  <i class="fas fa-globe fa-2x"></i
+                ></a>
+                <a
+                  href="https://github.com/Adam-smh/TestimonilSlider"
+                  target="_blank"
+                  class="button"
+                  ><i class="fab fa-github fa-2x"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card2" id="crd">
+            <img class="card-img" src="./Timeline.png" alt="" />
+            <h3 class="card-head">Timeline</h3>
+            <p class="card-details">
+              A Timeline using HTML, CSS and Glassmorphism. Purpose of Timeline
+              is to display previous jobs and it's details.
+            </p>
+            <div class="buttons">
+              <a
+                href="https://distracted-austin-cdffd8.netlify.app"
+                target="_blank"
+                class="button"
+              >
+                <i class="fas fa-globe fa-2x"></i
+              ></a>
+              <a
+                href="https://github.com/Adam-smh/Timeline"
+                target="_blank"
+                class="button"
+                ><i class="fab fa-github fa-2x"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="card3" id="crd">
+            <img class="card-img" src="./CF.png" alt="" />
+            <h3 class="card-head">Contact Form</h3>
+            <p class="card-details">
+              A working contact form made with HTML, CSS, Formspree and
+              Neomorphism. A form used to e-mail me on the website via
+              Formspree.
+            </p>
+            <div class="buttons">
+              <a
+                href="https://sharp-hopper-2e7799.netlify.app"
+                target="_blank"
+                class="button"
+              >
+                <i class="fas fa-globe fa-2x"></i
+              ></a>
+              <a
+                href="https://github.com/Adam-smh/HTML-Form"
+                target="_blank"
+                class="button"
+                ><i class="fab fa-github fa-2x"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="card4" id="crd">
+            <img class="card-img" src="./BMI.png" alt="" />
+            <h3 class="card-head">BMI Calculator</h3>
+            <p class="card-details">
+              A program made with Python and tkinter to calculate BMI using
+              variables given by user. Made with Pycharm, Python and tkinter.
+            </p>
+            <div class="buttons">
+              <a
+                href="https://replit.com/@Adamsmh/BMI-Calculator"
+                target="_blank"
+                class="button"
+              >
+                <i class="fas fa-globe fa-2x"></i
+              ></a>
+              <a
+                href="https://github.com/Adam-smh/BMI-Calculator"
+                target="_blank"
+                class="button"
+                ><i class="fab fa-github fa-2x"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="card5" id="crd">
+            <img class="card-img" src="./fib.png" alt="" />
+            <h3 class="card-head">Fibonacci Recursion</h3>
+            <p class="card-details">
+              A program using Python to display the Fibonacci sequence in terms
+              of users choosing, Capped at 20. Made with Pycharm and Python.
+            </p>
+            <div class="buttons">
+              <a
+                href="https://replit.com/@Adamsmh/Recursion"
+                target="_blank"
+                class="button"
+              >
+                <i class="fas fa-globe fa-2x"></i
+              ></a>
+              <a
+                href="https://github.com/Adam-smh/Recursion"
+                target="_blank"
+                class="button"
+                ><i class="fab fa-github fa-2x"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="card6" id="crd">
+            <img class="card-img" src="./Add.png" alt="" />
+            <h3 class="card-head">Adding Two Numbers</h3>
+            <p class="card-details">
+              A python program using tkinter to add two numbers of your choice.
+              Made with Pycharm, Python and tkinter.
+            </p>
+            <div class="buttons">
+              <a
+                href="https://replit.com/@Adamsmh/Adding-two-numbers"
+                target="_blank"
+                class="button"
+              >
+                <i class="fas fa-globe fa-2x"></i
+              ></a>
+              <a
+                href="https://github.com/Adam-smh/Adding-two-numbers"
+                target="_blank"
+                class="button"
+                ><i class="fab fa-github fa-2x"></i
+              ></a>
+            </div>
+          </div>
         </div>
+        <!--Testimonial Section-->
         <div class="section" id="No4">
           <h2><span class="sub">My</span> Testimonials</h2>
         </div>
-
-        <div class="section" id="No3">
-          <h2><span class="sub">My</span> Skills</h2>
-          <i class="fab fa-html5"></i>
-          <i class="fab fa-css3-alt"></i>
-          <i class="fab fa-js-square"></i>
-          <i class="fab fa-python"></i>
+        <!--Skills Section-->
+        <div class="section" id="No5">
+          <div class="flex-container">
+            <h2><span class="sub">My</span> Skills</h2>
+            <div class="icons-container">
+              <i class="fab fa-html5 fa-5x" id="b"></i>
+              <i class="fab fa-css3-alt fa-5x" id="b"></i>
+              <i class="fab fa-js-square fa-5x" id="b"></i>
+              <i class="fab fa-python fa-5x" id="b"></i>
+            </div>
+          </div>
         </div>
-
+        <!--Contact Section-->
         <div class="section" id="No6">
           <h2>Contact <span class="sub">Me</span></h2>
+
+          <form
+            id="form"
+            action="https://formspree.io/f/mleajjaa"
+            method="POST"
+          >
+            <h5 class="contact">Contact Me</h5>
+
+            <!--Name-->
+            <div class="info">
+              <label class="label" for="name"></label>
+              <input
+                class="input"
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Enter Username"
+                required
+              />
+            </div>
+
+            <!--Email-->
+            <div class="info">
+              <label class="label" for="email"></label>
+              <input
+                class="input"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Insert Email"
+                required
+              />
+            </div>
+
+            <!--Phone Number-->
+            <div class="info">
+              <label class="label" for="number"></label>
+              <input
+                class="input"
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="Please Enter Phone Number"
+                required
+              />
+            </div>
+
+            <!--Message-->
+            <div class="info">
+              <label class="label"></label>
+              <textarea
+                class="input"
+                name="message"
+                placeholder="Type Mesage Here"
+              ></textarea>
+            </div>
+
+            <!-- Button -->
+            <button class="input" type="submit">Send</button>
+          </form>
         </div>
       </div>
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.0/fullpage.min.js"></script>
-
+    <!--JavaScript (FullPage)-->
     <script>
       new fullpage("#fullPage", {
         // autoScrolling: true,
         navigation: true,
       });
     </script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          items: 1,
+          margin: 50,
+          loop: true,
+          stagePadding: 100,
+          dots: false,
+          autoplay: true,
+        });
+      });
+    </script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
   </body>
 </html>
