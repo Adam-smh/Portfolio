@@ -10,9 +10,23 @@
 body::-webkit-scrollbar {
   background: none;
 }
+body {
+  background: black;
+}
+/*#No1 {
+  background-image: url(./Adam_Logo_design\ B&W\ original.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 
-#No1 {
-  background-color: #1c1c1c;
+}*/
+
+.hl {
+  position: absolute;
+  right: 20%;
+  top: 10%;
+  z-index: -99999;
+  width: 40%;
 }
 
 .footer {
@@ -249,18 +263,19 @@ h2 {
   color: #c32865;
 }
 
-/*.card-container{
-  background: rgba(40, 40, 40, 1);
-  width: 15%;
-  height: fit-content;
-}*/
-
-.card1 {
+.card-container {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+* .card1 {
   background: rgba(40, 40, 40, 1);
   width: 20%;
   position: absolute;
   right: 60%;
   top: 15%;
+  flex: 0 1 150px; /*  No stretching: */
+  margin: 5px;
 }
 
 .card2 {
@@ -269,6 +284,8 @@ h2 {
   position: absolute;
   right: 37%;
   top: 15%;
+  flex: 0 1 150px; /*  No stretching: */
+  margin: 5px;
 }
 
 .card3 {
@@ -277,6 +294,8 @@ h2 {
   position: absolute;
   right: 14%;
   top: 15%;
+  flex: 0 1 150px; /*  No stretching: */
+  margin: 5px;
 }
 
 .card4 {
@@ -285,6 +304,8 @@ h2 {
   position: absolute;
   right: 60%;
   top: 57%;
+  flex: 0 1 150px; /*  No stretching: */
+  margin: 5px;
 }
 
 .card5 {
@@ -293,6 +314,8 @@ h2 {
   position: absolute;
   right: 37%;
   top: 57%;
+  flex: 0 1 150px; /*  No stretching: */
+  margin: 5px;
 }
 
 .card6 {
@@ -301,6 +324,8 @@ h2 {
   position: absolute;
   right: 14%;
   top: 57%;
+  flex: 0 1 150px; /*  No stretching: */
+  margin: 5px;
 }
 
 .card-img {
