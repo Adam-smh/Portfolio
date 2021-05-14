@@ -13,13 +13,12 @@ body::-webkit-scrollbar {
 body {
   background: black;
 }
-/*#No1 {
+#No1 {
   background-image: url(./Adam_Logo_design\ B&W\ original.png);
   background-size: contain;
-  background-position: center;
+  background-position: 80% 50%;
   background-repeat: no-repeat;
-
-}*/
+}
 
 .hl {
   position: absolute;
@@ -40,7 +39,7 @@ body {
 .header {
   position: fixed;
   top: 3%;
-  right: 75%;
+  right: 79%;
   color: #f5f3f4;
   z-index: 9999;
 }
@@ -63,7 +62,7 @@ body {
 
 #No2 .fp-tableCell {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   background-size: cover;
   padding-left: 10%;
   background-image: url("./Adam-Africa-2-ConvertImage.jpg");
@@ -175,6 +174,10 @@ h2 {
   transition: all 0.1s ease-in-out;
 }
 
+.ab {
+  padding-top: 5%;
+}
+
 .bio {
   display: inline-block;
   width: fit-content;
@@ -185,7 +188,7 @@ h2 {
   color: white;
   text-align: end;
   font-family: "Montserrat";
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(196, 64, 101, 0.35);
   backdrop-filter: blur(0px);
   -webkit-backdrop-filter: blur(0px);
   transition: 0.3s ease-in;
@@ -194,6 +197,15 @@ h2 {
 .bio:hover {
   color: white;
   background-color: #c32865;
+}
+
+.NO2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: fit-content;
+  padding-top: 10%;
+  gap: 20px;
 }
 
 .T {
@@ -205,10 +217,11 @@ h2 {
   font-family: "Comfortaa";
   padding-right: 40%;
   /* padding-bottom: 30%; */
+  height: fit-content;
   margin-bottom: 50%;
-  position: absolute;
-  left: 45%;
-  top: -10%;
+  flex: 0 1 150px; /*  No stretching: */
+  margin: 5px;
+  padding-bottom: 10%;
 }
 
 .passion {
@@ -221,7 +234,7 @@ h2 {
   color: white;
   text-align: end;
   font-family: "Montserrat";
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(196, 64, 101, 0.35);
   backdrop-filter: blur(0px);
   -webkit-backdrop-filter: blur(0px);
   transition: 0.3s ease-in;
@@ -241,10 +254,10 @@ h2 {
   font-family: "Comfortaa";
   padding-right: 40%;
   /* padding-bottom: 30%; */
+  height: fit-content;
   margin-bottom: 50%;
-  position: absolute;
-  left: 45%;
-  top: -10%;
+  flex: 0 1 150px; /*  No stretching: */
+  margin: 5px;
 }
 
 .container {
@@ -261,91 +274,6 @@ h2 {
 
 #b:hover {
   color: #c32865;
-}
-
-.card-container {
-  display: grid;
-  grid-gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-}
-* .card1 {
-  background: rgba(40, 40, 40, 1);
-  width: 20%;
-  position: absolute;
-  right: 60%;
-  top: 15%;
-  flex: 0 1 150px; /*  No stretching: */
-  margin: 5px;
-}
-
-.card2 {
-  background: rgba(40, 40, 40, 1);
-  width: 20%;
-  position: absolute;
-  right: 37%;
-  top: 15%;
-  flex: 0 1 150px; /*  No stretching: */
-  margin: 5px;
-}
-
-.card3 {
-  background: rgba(40, 40, 40, 1);
-  width: 20%;
-  position: absolute;
-  right: 14%;
-  top: 15%;
-  flex: 0 1 150px; /*  No stretching: */
-  margin: 5px;
-}
-
-.card4 {
-  background: rgba(40, 40, 40, 1);
-  width: 20%;
-  position: absolute;
-  right: 60%;
-  top: 57%;
-  flex: 0 1 150px; /*  No stretching: */
-  margin: 5px;
-}
-
-.card5 {
-  background: rgba(40, 40, 40, 1);
-  width: 20%;
-  position: absolute;
-  right: 37%;
-  top: 57%;
-  flex: 0 1 150px; /*  No stretching: */
-  margin: 5px;
-}
-
-.card6 {
-  background: rgba(40, 40, 40, 1);
-  width: 20%;
-  position: absolute;
-  right: 14%;
-  top: 57%;
-  flex: 0 1 150px; /*  No stretching: */
-  margin: 5px;
-}
-
-.card-img {
-  width: 100%;
-}
-
-.card-head {
-  text-align: center;
-  font-size: 150%;
-  font-family: "Comfortaa";
-  color: #f5f3f4;
-}
-
-.card-details {
-  color: #f5f3f4;
-  font-family: "Montserrat";
-  font-size: 100%;
-  font-weight: 800;
-  margin-top: 1rem;
-  text-align: center;
 }
 
 .flex-container {
@@ -365,28 +293,18 @@ h2 {
   transition: 0.3s ease-in;
 }
 
-#crd {
-  transition: 0.3s ease-in-out;
-}
-
-#crd:hover {
-  background-color: #c32865;
-  width: 21%;
-}
-
-.button {
-  color: #f5f3f4;
-  transition: 0.3s ease-in;
-}
-
-.button:hover {
-  color: #1c1c1c;
+.inner-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  position: absolute;
+  top: 15%;
 }
 
 form {
   position: absolute;
   top: 30%;
-  right: 45%;
+  right: 30%;
 }
 .input {
   background: #1c1c1c;
@@ -420,4 +338,192 @@ button:hover {
   margin-bottom: 15%;
   font-size: 3rem;
   font-family: "Comfortaa";
+}
+#No4 .fp-tableCell {
+  display: flex;
+}
+/*.Tcontainer{
+  max-width: 20%;
+}*/
+
+.txtcontainer {
+  display: flex;
+  flex-direction: row;
+
+  width: 40%;
+  height: 20vh;
+  min-width: 300px;
+  margin: 1%;
+
+  overflow: hidden;
+  padding: 1%;
+}
+
+.tc1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./Ronald\ Terblanche\ \(1\).JPG");
+  object-fit: contain;
+  background-size: cover;
+  background-position: center;
+}
+
+.tc2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./Zoe\ Erispe\ \(2\).JPG");
+  object-fit: contain;
+  background-size: cover;
+  background-position: center;
+}
+
+.tc3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./Aneeqah\ Jones\ \(2\).JPG");
+  object-fit: contain;
+  background-size: cover;
+  background-position: center;
+}
+
+.tc4 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./Jason.jpg");
+  object-fit: contain;
+  background-size: cover;
+  background-position: center;
+}
+
+.tc5 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./godwin-dzvapatsra.jpg");
+  object-fit: contain;
+  background-size: cover;
+  background-position: center;
+}
+
+.MT {
+  padding-top: 40px;
+}
+
+.txtcontainer {
+  font-family: "Montserrat";
+  color: #f5f3f4;
+  display: flex;
+  flex-direction: column;
+  font-weight: 800;
+}
+
+.Name {
+  font-size: 150%;
+}
+
+q {
+  font-size: 120%;
+}
+#No3 .fp-tableCell {
+  display: flex;
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+.PP {
+  padding-top: 10%;
+}
+
+.card1,
+.card2,
+.card3,
+.card4,
+.card5,
+.card6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+
+  flex: 0 1 320px;
+  margin: 1px;
+  color: #ffffff;
+
+  font-family: "Comfortaa";
+  transition: 0.3s ease-in-out;
+}
+
+.card-img {
+  width: 100%;
+}
+
+.button {
+  color: #f5f3f4;
+  transition: 0.3s ease-in;
+}
+
+.button:hover {
+  color: #c32865;
+}
+
+@media screen and (max-width: 1490px) {
+  h1 {
+    color: #c32865;
+  }
+  h2 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+
+    text-transform: uppercase;
+    color: #f5f3f4;
+    font-size: 4rem;
+    font-family: sans-serif;
+    animation: fadeIn linear 5s;
+    animation-direction: alternate;
+    -webkit-animation: fadeIn linear 5s;
+    -moz-animation: fadeIn linear 5s;
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-moz-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .header {
+    position: fixed;
+    top: 3%;
+    right: 55%;
+    color: #f5f3f4;
+    z-index: 9999;
+  }
+  .card-container {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+  }
 }

@@ -7,18 +7,7 @@
     <link rel="stylesheet" href="./style.CSS" />
     <link rel="stylesheet" href="./ugh.js" />
     <link rel="icon" href="./favicon.png" type="image/icon type" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
-      crossorigin="anonymous"
-    />
+
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script
@@ -48,7 +37,6 @@
     </div>
     <main>
       <div id="fullPage">
-        <!--Landing Section-->
         <div class="section" id="No1">
           <div data-tilt>
             <img src="./Adam_Logo_design B&W original.png" class="hl" alt="" />
@@ -63,147 +51,176 @@
         </div>
         <!--About Section-->
         <div class="section" id="No2">
-          <h2>About <span class="sub"> Me</span></h2>
+          <h2 class="ab">About <span class="sub"> Me</span></h2>
+          <div class="NO2">
+            <p class="bio" data-tilt data-tilt-speed="200">
+              <span class="T">bio</span> <br />
+              I am a competitive individual but am <br />also able to reach out
+              and receive help<br />
+              from others. I believe in having high <br />standards but also
+              being humble with<br />
+              what you do. Being kind but not a <br />
+              pushover is<br />
+              a very important value to me.<br />
+              I hope to change the world with my <br />
+              work but also have the capacity for patience<br />
+              in doing so.
+            </p>
 
-          <p class="bio" data-tilt>
-            <span class="T">bio</span> <br />
-            I am a competitive individual but am <br />also able to reach out
-            and receive help<br />
-            from others. I believe in having high <br />standards but also being
-            humble with<br />
-            what you do. Being kind but not a <br />
-            pushover is<br />
-            a very important value to me.<br />
-            I hope to change the world with my <br />
-            work but also have the capacity for patience<br />
-            in doing so.
-          </p>
-
-          <p class="passion" data-tilt>
-            <span class="T2">passion</span> My love for tech stems from my first
-            <br />
-            computer in 2009. <br />
-            It came with Windows XP and probably <br />
-            about 1GB of RAM. <br />
-            It was slow but I always had a <br />
-            huge fascination with the things you can do with it. <br />
-            It made me wonder what PCs would be like over <br />
-            time, and that is where my love <br />
-            for tech started and from then it was <br />
-            constantly evolving.
-          </p>
+            <p class="passion" data-tilt data-tilt-speed="200">
+              <span class="T2">passion</span> My love for tech stems from my
+              first
+              <br />
+              computer in 2009. <br />
+              It came with Windows XP and probably <br />
+              about 1GB of RAM. <br />
+              It was slow but I always had a <br />
+              huge fascination with the things you can do with it. <br />
+              It made me wonder what PCs would be like over <br />
+              time, and that is where my love <br />
+              for tech started and from then it was <br />
+              constantly evolving.
+            </p>
+          </div>
         </div>
         <!--Projects Section-->
         <div class="section" id="No3">
-          <h2>Previous<span class="sub">Projects</span></h2>
+          <h2 class="PP">Previous<span class="sub">Projects</span></h2>
           <div class="card-container">
-            <div class="card1" id="crd">
-              <img class="card-img" src="./testi-slide.png" alt="" />
-              <h3 class="card-head">Testimonial Slider</h3>
+            <div class="card1" class="crd">
+              <img src="./projects/Timeline.png" class="card-img" alt="" />
+              <h4>Timeline</h4>
               <p class="card-details">
-                A Testimonial Slider made with HTML, CSS, Glassmorphism and
-                OwlCarousel2. This shows Testimonials said about me by my peers.
+                A Timeline using HTML, CSS and Glassmorphism. Purpose of
+                Timeline is to display previous jobs and it's details.
               </p>
-              <div class="buttons">
+              <div class="button">
                 <a
-                  href="https://friendly-bardeen-0dc788.netlify.app/"
+                  href="https://distracted-austin-cdffd8.netlify.app"
                   target="_blank"
                   class="button"
                 >
                   <i class="fas fa-globe fa-2x"></i
                 ></a>
                 <a
-                  href="https://github.com/Adam-smh/TestimonilSlider"
+                  href="https://github.com/Adam-smh/Timeline"
                   target="_blank"
                   class="button"
                   ><i class="fab fa-github fa-2x"></i
                 ></a>
               </div>
             </div>
-          </div>
 
-          <div class="card2" id="crd">
-            <img class="card-img" src="./Timeline.png" alt="" />
-            <h3 class="card-head">Timeline</h3>
-            <p class="card-details">
-              A Timeline using HTML, CSS and Glassmorphism. Purpose of Timeline
-              is to display previous jobs and it's details.
-            </p>
-            <div class="buttons">
-              <a
-                href="https://distracted-austin-cdffd8.netlify.app"
-                target="_blank"
-                class="button"
-              >
-                <i class="fas fa-globe fa-2x"></i
-              ></a>
-              <a
-                href="https://github.com/Adam-smh/Timeline"
-                target="_blank"
-                class="button"
-                ><i class="fab fa-github fa-2x"></i
-              ></a>
-            </div>
-          </div>
-
-          <div class="card3" id="crd">
-            <img class="card-img" src="./CF.png" alt="" />
-            <h3 class="card-head">Contact Form</h3>
-            <p class="card-details">
-              A working contact form made with HTML, CSS, Formspree and
-              Neomorphism. A form used to e-mail me on the website via
-              Formspree.
-            </p>
-            <div class="buttons">
-              <a
+            <div class="card2" class="crd">
+              <img src="./projects/CF.png" class="card-img" alt="" />
+              <h4>
+                Contact Form
+               
+              </h4>
+              <p class="card-details">
+                A Timeline using HTML, CSS and Glassmorphism. Purpose of
+                Timeline is to display previous jobs and it's details.
+              </p>
+              <div class="button">
+                <a
                 href="https://sharp-hopper-2e7799.netlify.app"
                 target="_blank"
                 class="button"
-              >
-                <i class="fas fa-globe fa-2x"></i
-              ></a>
-              <a
+                >
+                  <i class="fas fa-globe fa-2x"></i
+                ></a>
+                <a
                 href="https://github.com/Adam-smh/HTML-Form"
                 target="_blank"
                 class="button"
                 ><i class="fab fa-github fa-2x"></i
               ></a>
+              </div>
             </div>
-          </div>
 
-          <div class="card4" id="crd">
-            <img class="card-img" src="./BMI.png" alt="" />
-            <h3 class="card-head">BMI Calculator</h3>
-            <p class="card-details">
-              A program made with Python and tkinter to calculate BMI using
-              variables given by user. Made with Pycharm, Python and tkinter.
-            </p>
-            <div class="buttons">
-              <a
-                href="https://replit.com/@Adamsmh/BMI-Calculator"
+            <div class="card3" class="crd">
+              <img src="./projects/testi-slide.png" class="card-img" alt="" />
+              <h4>Testimonial Slider</h4>
+              <p class="card-details">
+                A Timeline using HTML, CSS and Glassmorphism. Purpose of
+                Timeline is to display previous jobs and it's details.
+              </p>
+              <div class="button">
+                <a
+                href="https://friendly-bardeen-0dc788.netlify.app/"
                 target="_blank"
                 class="button"
               >
-                <i class="fas fa-globe fa-2x"></i
+                  <i class="fas fa-globe fa-2x"></i
+                ></a>
+                <a
+                href="https://github.com/Adam-smh/TestimonilSlider"
+                target="_blank"
+                class="button"
+                ><i class="fab fa-github fa-2x"></i
               ></a>
-              <a
+              </div>
+            </div>
+
+            <div class="card4" class="crd">
+              <img src="./projects/BMI.png" class="card-img" alt="" />
+              <h4>BMI Calculator</h4>
+              <p class="card-details">
+                A Timeline using HTML, CSS and Glassmorphism. Purpose of
+                Timeline is to display previous jobs and it's details.
+              </p>
+              <div class="button">
+                <a
+                    href="https://replit.com/@Adamsmh/BMI-Calculator"
+                    target="_blank"
+                    class="button"
+                  >
+                  <i class="fas fa-globe fa-2x"></i
+                ></a>
+                <a
                 href="https://github.com/Adam-smh/BMI-Calculator"
                 target="_blank"
                 class="button"
                 ><i class="fab fa-github fa-2x"></i
               ></a>
+              </div>
             </div>
-          </div>
 
-          <div class="card5" id="crd">
-            <img class="card-img" src="./fib.png" alt="" />
-            <h3 class="card-head">Fibonacci Recursion</h3>
-            <p class="card-details">
-              A program using Python to display the Fibonacci sequence in terms
-              of users choosing, Capped at 20. Made with Pycharm and Python.
-            </p>
-            <div class="buttons">
-              <a
+            <div class="card5" class="crd">
+              <img src="./projects/Add.png" class="card-img" alt="" />
+              <h4>Adding Two Numbers</h4>
+              <p class="card-details">
+                A Timeline using HTML, CSS and Glassmorphism. Purpose of
+                Timeline is to display previous jobs and it's details.
+              </p>
+              <div class="button">
+                <a
+                href="https://replit.com/@Adamsmh/Adding-two-numbers"
+                target="_blank"
+                class="button"
+              >
+                <i class="fas fa-globe fa-2x"></i
+              ></a>
+
+                </a>
+                <a
+                href="https://github.com/Adam-smh/Adding-two-numbers"
+                target="_blank"
+                class="button"
+                ><i class="fab fa-github fa-2x"></i
+              ></a>
+              </div>
+            </div>
+
+            <div class="card6" class="crd">
+              <img src="./projects/fib.png" class="card-img" alt="" />
+              <h4>Fibonacci Sequence</h4>
+              <p class="card-details">
+                A Timeline using HTML, CSS and Glassmorphism. Purpose of
+                Timeline is to display previous jobs and it's details.
+              </p>
+              <div class="button">
+                <a
                 href="https://replit.com/@Adamsmh/Recursion"
                 target="_blank"
                 class="button"
@@ -211,41 +228,69 @@
                 <i class="fas fa-globe fa-2x"></i
               ></a>
               <a
-                href="https://github.com/Adam-smh/Recursion"
-                target="_blank"
-                class="button"
-                ><i class="fab fa-github fa-2x"></i
-              ></a>
-            </div>
-          </div>
-
-          <div class="card6" id="crd">
-            <img class="card-img" src="./Add.png" alt="" />
-            <h3 class="card-head">Adding Two Numbers</h3>
-            <p class="card-details">
-              A python program using tkinter to add two numbers of your choice.
-              Made with Pycharm, Python and tkinter.
-            </p>
-            <div class="buttons">
-              <a
-                href="https://replit.com/@Adamsmh/Adding-two-numbers"
-                target="_blank"
-                class="button"
-              >
-                <i class="fas fa-globe fa-2x"></i
-              ></a>
-              <a
-                href="https://github.com/Adam-smh/Adding-two-numbers"
-                target="_blank"
-                class="button"
-                ><i class="fab fa-github fa-2x"></i
-              ></a>
+              href="https://github.com/Adam-smh/Recursion"
+              target="_blank"
+              class="button"
+              ><i class="fab fa-github fa-2x"></i
+            ></a>
+              </div>
             </div>
           </div>
         </div>
         <!--Testimonial Section-->
         <div class="section" id="No4">
-          <h2><span class="sub">My</span> Testimonials</h2>
+          <h2 class="MT"><span class="sub">My</span> Testimonials</h2>
+
+          <div class="Tcontainer">
+            <div class="inner-container">
+              <div class="txtcontainer tc1">
+                <h5 class="Name">Ronal Terblanche</h5>
+
+                <q class="txt"
+                  >He is meticulous with everything he does, from designing a
+                  website, to creating an application. He has shown an ability
+                  to thrive in this industry as he has always been on top of the
+                  work he does. He’d make an amazing full-stack developer</q
+                >
+              </div>
+              <div class="txtcontainer tc2">
+                <h5 class="Name">Zoe Erispe</h5>
+                <q class="txt"
+                  >Adam is an outstanding fullstack developer. Working with him
+                  is always a delight due to his conscientious nature. I believe
+                  he will make a great impact in the tech industry.</q
+                >
+              </div>
+              <div class="txtcontainer tc3">
+                <h5 class="Name">Aneeqah Jones</h5>
+                <q class="txt"
+                  >Adam is a skilled individual who is wiling to share his
+                  knowledge with his fellow classmates, he is a kind person who
+                  is willing to go the extra mile to make sure his projects are
+                  up to standard. My interaction with him is always a fun and an
+                  intellectual experience.</q
+                >
+              </div>
+              <div class="txtcontainer tc4">
+                <h5 class="Name">Jason Wandrag</h5>
+                <q class="txt">
+                  Adam is a very genuine individual, who has proven able to work
+                  both in groups and by himself. He has a healthy sense of humor
+                  and his communication is top notch.
+                </q>
+              </div>
+              <div class="txtcontainer tc5">
+                <h5 class="Name">Godwin DzVapatsva</h5>
+                <q class="txt"
+                  >I am confident that Adam can be a great asset to an
+                  organisation. His gentle personality and ability to work with
+                  fellow students during coding sessions is exceptional. I
+                  recommend him confidently-Godwin Head of Curriculum and
+                  Learning</q
+                >
+              </div>
+            </div>
+          </div>
         </div>
         <!--Skills Section-->
         <div class="section" id="No5">
@@ -338,23 +383,7 @@
       integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
       crossorigin="anonymous"
     ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      $(document).ready(function () {
-        $(".owl-carousel").owlCarousel({
-          items: 1,
-          margin: 50,
-          loop: true,
-          stagePadding: 100,
-          dots: false,
-          autoplay: true,
-        });
-      });
-    </script>
+
     <script>
       AOS.init();
     </script>
