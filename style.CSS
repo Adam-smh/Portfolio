@@ -337,6 +337,7 @@ button:hover {
   text-transform: uppercase;
   margin-bottom: 15%;
   font-size: 3rem;
+  font-weight: 900;
   font-family: "Comfortaa";
 }
 #No4 .fp-tableCell {
@@ -385,7 +386,7 @@ button:hover {
 
 .tc4 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("./Jason.jpg");
+    url("./Jason2.jpg");
   object-fit: contain;
   background-size: cover;
   background-position: center;
