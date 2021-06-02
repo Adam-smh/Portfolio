@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body::-webkit-scrollbar {
   display: none;
 }
@@ -24,6 +28,7 @@ body {
   display: flex;
   background-image: url(/pictures/bwa.jpg);
   background-position: right;
+  background-attachment: fixed;
 }
 
 #No3 {
@@ -103,17 +108,6 @@ body {
   color: #f5f3f4;
 }
 
-#No2 .fp-tableCell {
-  display: flex;
-  flex-direction: row;
-  background-size: cover;
-  padding-left: 10%;
-  background-image: url(/pictures/Adam-Africa-2-ConvertImage.jpg);
-  background-size: 100rem;
-  background-position-x: 40%;
-  background-position-y: 40%;
-}
-
 #No3 .fp-tableCell {
   background-size: cover;
   padding-left: 10%;
@@ -133,6 +127,7 @@ body {
 #No6 {
   background-image: url(/Untitleddesign/1.png);
   background-size: cover;
+  background-attachment: fixed;
 }
 
 h1 {
