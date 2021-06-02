@@ -8,16 +8,41 @@
 }
 
 body::-webkit-scrollbar {
-  background: none;
+  display: none;
 }
 body {
   background: black;
+  overflow-x: hidden;
 }
+
 #No1 {
-  background-image: url(./Adam_Logo_design\ B&W\ original.png);
-  background-size: contain;
-  background-position: 80% 50%;
-  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+#No2 {
+  height: 100vh;
+  display: flex;
+  background-image: url(/pictures/bwa.jpg);
+  background-position: center;
+}
+
+#No3 {
+  height: 100%;
+  display: flex;
+  background: #1c1c1c;
+}
+
+#No4 {
+  display: flex;
+  height: 100vh;
+}
+
+#No5 {
+  height: 100vh;
+}
+
+#No6 {
+  height: 100vh;
 }
 
 .hl {
@@ -29,6 +54,9 @@ body {
 }
 
 .footer {
+  display: flex;
+  justify-content: space-between;
+  width: 90vw;
   position: fixed;
   bottom: 3%;
   right: 5%;
@@ -36,10 +64,15 @@ body {
   color: #f5f3f4;
 }
 
+.namea {
+  font-size: 30px;
+  font-family: "Montserrat";
+}
+
 .header {
   position: fixed;
   top: 3%;
-  right: 79%;
+  right: 85%;
   color: #f5f3f4;
   z-index: 9999;
 }
@@ -65,7 +98,7 @@ body {
   flex-direction: row;
   background-size: cover;
   padding-left: 10%;
-  background-image: url("./Adam-Africa-2-ConvertImage.jpg");
+  background-image: url(/pictures/Adam-Africa-2-ConvertImage.jpg);
   background-size: 100rem;
   background-position-x: 40%;
   background-position-y: 40%;
@@ -79,32 +112,30 @@ body {
 }
 
 #No4 {
-  background-image: url(./aesthetic/4.png);
+  background-image: url(/aesthetic/4.png);
   background-size: cover;
-  padding-left: 10%;
 }
 
 #No5 {
   background: #1c1c1c;
-  padding-left: 10%;
 }
 
 #No6 {
-  background-image: url(./Untitleddesign/2.png);
+  background-image: url(/Untitleddesign/1.png);
   background-size: cover;
-  padding-left: 10%;
 }
 
 h1 {
   display: flex;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: flex-end;
   flex-direction: column;
   font-family: sans-serif;
   color: #f5f3f4;
   font-size: 5rem;
   min-height: 30vh;
   padding-left: 10%;
+  padding-top: 20%;
   text-transform: uppercase;
 }
 
@@ -116,8 +147,6 @@ h1 {
 
 h2 {
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
   flex-direction: column;
   writing-mode: vertical-lr;
   text-orientation: upright;
@@ -125,38 +154,6 @@ h2 {
   color: #f5f3f4;
   font-size: 4rem;
   font-family: sans-serif;
-  animation: fadeIn linear 5s;
-  animation-direction: alternate;
-  -webkit-animation: fadeIn linear 5s;
-  -moz-animation: fadeIn linear 5s;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-@-moz-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 .logo {
@@ -174,15 +171,15 @@ h2 {
   transition: all 0.1s ease-in-out;
 }
 
-.ab {
-  padding-top: 5%;
+h2 {
+  padding-left: 5%;
 }
 
 .bio {
   display: inline-block;
   width: fit-content;
   padding: 1rem;
-  margin-left: 15%;
+  margin-right: 30%;
   font-size: 130%;
   font-weight: 800;
   color: white;
@@ -199,12 +196,28 @@ h2 {
   background-color: #c32865;
 }
 
+.skills {
+  font-size: 4rem;
+  color: #f5f3f4;
+  font-family: "Montserrat";
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  transition: 0.3s ease-in;
+}
+
+.skills:hover {
+  color: #c32865;
+}
+
 .NO2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   height: fit-content;
-  padding-top: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
   gap: 20px;
 }
 
@@ -260,6 +273,42 @@ h2 {
   margin: 5px;
 }
 
+.education {
+  display: inline-block;
+  width: fit-content;
+  padding: 1rem;
+  margin-right: 35%;
+  font-size: 130%;
+  font-weight: 800;
+  color: white;
+  text-align: end;
+  font-family: "Montserrat";
+  background: rgba(196, 64, 101, 0.35);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  transition: 0.3s ease-in;
+}
+
+.education:hover {
+  color: white;
+  background-color: #c32865;
+}
+
+.T3 {
+  color: white;
+  text-transform: uppercase;
+  /* font-size: 2rem; */
+  /* font-weight: bolder; */
+  font-size: 3rem;
+  font-family: "Comfortaa";
+  padding-right: 40%;
+  /* padding-bottom: 30%; */
+  height: fit-content;
+  margin-bottom: 50%;
+  flex: 0 1 150px; /*  No stretching: */
+  margin: 5px;
+}
+
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -282,11 +331,13 @@ h2 {
 }
 
 .icons-container {
-  background: url(https://i.picsum.photos/id/1042/3456/5184.jpg?hmac=5xr8Veg2D_kEQQO6rvGj_Yk8s_N4iq3-eZ9_KclSXNQ);
-
+  background: url(https://i.picsum.photos/id/1074/5472/3648.jpg?hmac=w-Fbv9bl0KpEUgZugbsiGk3Y2-LGAuiLZOYsRk0zo4A);
+  background-position-x: center;
   width: 50%;
+  height: 61.2rem;
   display: flex;
   justify-content: center;
+  flex-direction: column;
   background-size: cover;
   align-items: center;
   margin-left: 15%;
@@ -297,15 +348,9 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  position: absolute;
-  top: 15%;
+  padding-top: 10%;
 }
 
-form {
-  position: absolute;
-  top: 30%;
-  right: 30%;
-}
 .input {
   background: #1c1c1c;
   color: #f5f3f4;
@@ -314,7 +359,7 @@ form {
   padding: 5% 10%;
   border: none;
   margin-bottom: 5%;
-  width: 120%;
+  width: fit-content;
   outline: none;
 }
 
@@ -352,7 +397,6 @@ button:hover {
   flex-direction: row;
 
   width: 40%;
-  height: 20vh;
   min-width: 300px;
   margin: 1%;
 
@@ -362,7 +406,7 @@ button:hover {
 
 .tc1 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("./Ronald\ Terblanche\ \(1\).JPG");
+    url("/pictures/Ronald\ Terblanche\ \(1\).JPG");
   object-fit: contain;
   background-size: cover;
   background-position: center;
@@ -370,7 +414,7 @@ button:hover {
 
 .tc2 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("./Zoe\ Erispe\ \(2\).JPG");
+    url("/pictures/Zoe\ Erispe\ \(2\).JPG");
   object-fit: contain;
   background-size: cover;
   background-position: center;
@@ -378,7 +422,7 @@ button:hover {
 
 .tc3 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("./Aneeqah\ Jones\ \(2\).JPG");
+    url("/pictures/Aneeqah\ Jones\ \(2\).JPG");
   object-fit: contain;
   background-size: cover;
   background-position: center;
@@ -386,7 +430,7 @@ button:hover {
 
 .tc4 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("./Jason2.jpg");
+    url("/pictures/Jason2.jpg");
   object-fit: contain;
   background-size: cover;
   background-position: center;
@@ -394,7 +438,7 @@ button:hover {
 
 .tc5 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("./godwin-dzvapatsra.jpg");
+    url("/pictures/godwin-dzvapatsra.jpg");
   object-fit: contain;
   background-size: cover;
   background-position: center;
@@ -414,6 +458,7 @@ button:hover {
 
 .Name {
   font-size: 150%;
+  margin-bottom: 15px;
 }
 
 q {
@@ -429,12 +474,21 @@ q {
   align-items: center;
   align-content: center;
   gap: 20px;
-  width: 100%;
-  height: 100%;
+  width: 150%;
+  height: 150%;
+
+  margin: 8px;
+  padding: 10%;
 }
 
-.PP {
-  padding-top: 10%;
+h4 {
+  font-family: "Comfortaa";
+  text-transform: uppercase;
+}
+
+.Name .job {
+  color: rgb(212, 212, 212);
+  font-size: 90%;
 }
 
 .card1,
@@ -453,8 +507,15 @@ q {
   margin: 1px;
   color: #ffffff;
 
-  font-family: "Comfortaa";
+  font-family: "Montserrat";
+  font-size: 150%;
+
   transition: 0.3s ease-in-out;
+  background: rgba(195, 40, 101, 0.15);
+
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border-radius: 10px;
 }
 
 .card-img {
@@ -471,9 +532,10 @@ q {
 }
 
 @media screen and (max-width: 1490px) {
-  h1 {
-    color: #c32865;
+  #No1 {
+    height: 100vh;
   }
+
   h2 {
     display: flex;
     align-items: flex-start;
@@ -484,37 +546,6 @@ q {
     color: #f5f3f4;
     font-size: 4rem;
     font-family: sans-serif;
-    animation: fadeIn linear 5s;
-    animation-direction: alternate;
-    -webkit-animation: fadeIn linear 5s;
-    -moz-animation: fadeIn linear 5s;
-  }
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-
-    100% {
-      opacity: 1;
-    }
-  }
-
-  @-moz-keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-
-  @-webkit-keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
   }
   .header {
     position: fixed;
@@ -523,8 +554,39 @@ q {
     color: #f5f3f4;
     z-index: 9999;
   }
-  .card-container {
-    flex-wrap: nowrap;
-    overflow-x: scroll;
+  .hl {
+    position: absolute;
+    right: 22%;
+    top: 35%;
+    z-index: -99999;
+    width: 60%;
+  }
+  body {
+    background: black;
+    overflow-x: hidden;
+  }
+
+  .header {
+    position: fixed;
+    top: 3%;
+    right: 75%;
+    color: #f5f3f4;
+    z-index: 9999;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    width: 90vw;
+    position: absolute;
+    bottom: 3%;
+    right: 5%;
+    z-index: 9999;
+    color: #f5f3f4;
+  }
+
+  .namea {
+    font-size: 30px;
+    font-family: "Montserrat";
   }
 }
