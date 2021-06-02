@@ -8,7 +8,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./CSS/style.CSS" />
 
-
+    
     <!--Favicon Icon -->
     <link rel="icon" href="./Favicon/favicon.png" type="image/icon type" />
 
@@ -35,17 +35,38 @@
       <span class="namea">Adam Africa</span>
 <div class="innerfooter">
       <a href="https://github.com/Adam-smh" target="_blank" class="b"
-        ><i class="fab fa-github fa-2x"></i
+        ><i class="fab fa-github fa-1x"></i
       ></a>
 
       <a
         href="https://www.linkedin.com/in/adam-africa-1086b91a3/"
         target="_blank"
         class="b"
-        ><i class="fab fa-linkedin-in fa-2x"></i
+        ><i class="fab fa-linkedin-in fa-1x"></i
       ></a>
     </div>
     </div>
+<ul class="nav">
+  <li>
+    <a href="#No1">Landing</a>
+  </li>
+  <li>
+    <a href="#No2">About Me</a>
+  </li>
+  <li>
+    <a href="#No3">Previous Projects</a>
+  </li>
+  <li>
+    <a href="#No4">Testimonials</a>
+  </li>
+  <li>
+    <a href="#No6">Contact Me</a>
+  </li>
+</ul>
+<button onclick="togglemenu()" class="Navb">
+<i class="fas fa-bars fa-2x"></i>
+</button>
+
     <main>
       <div id="fullPage">
         <section id="No1">
@@ -66,39 +87,52 @@
           data-aos-duration="3000" class="ab">About <span class="sub"> Me</span></h2>
           <div class="NO2">
             <p class="bio" data-tilt data-tilt-speed="200">
-              <span class="T">bio</span> <br />
-              I am a competitive individual but am <br />also able to reach out
-              and receive help<br />
-              from others. I believe in having high <br />standards but also
-              being humble with<br />
-              what you do. Being kind but not a <br />
-              pushover is<br />
-              a very important value to me.<br />
-              I hope to change the world with my <br />
-              work but also have the capacity for patience<br />
+              <span class="T">bio</span> 
+              I am a competitive individual but am also able to reach out
+              and receive help
+              from others. I believe in having high standards but also
+              being humble with
+              what you do. Being kind but not a 
+              pushover is
+              a very important value to me.
+              I hope to change the world with my
+              work but also have the capacity for patience
               in doing so.
             </p>
 
             <p class="passion" data-tilt data-tilt-speed="200">
               <span class="T2">passion</span> My love for tech stems from my
               first
-              <br />
-              computer in 2009. <br />
-              It came with Windows XP and probably <br />
-              about 1GB of RAM. <br />
-              It was slow but I always had a <br />
-              huge fascination with the things you can do with it. <br />
-              It made me wonder what PCs would be like over <br />
-              time, and that is where my love <br />
-              for tech started and from then it was <br />
+            
+              computer in 2009.
+              It came with Windows XP and probably
+              about 1GB of RAM.
+              It was slow but I always had a
+              huge fascination with the things you can do with it.
+              It made me wonder what PCs would be like over
+              time, and that is where my love
+              for tech started and from then it was
               constantly evolving.
             </p>
 
             <p class="education" data-tilt data-tilt-speed="200">
               <span class="T3">education</span>
-              Matriculated 2020 <br /> (Rosebank Progress College)
+              Matriculated 2020 (Rosebank Progress College)
 
             </p>
+
+              <p class="Skills" data-tilt data-tilt-speed="200"><span class="T4">Skills</span> 
+             
+                <i class="fab fa-html5 fa-2x" id="b"><span class="H">HTML5: Intermediate </span> </i>
+               
+                
+                <i class="fab fa-css3-alt fa-2x" id="b"><span class="H">CSS 3: Intermediate </span></i>
+               
+                <i class="fab fa-js-square fa-2x" id="b"><span class="H">JavaScript: Beginner </span></i>
+                
+                <i class="fab fa-python fa-2x" id="b"><span class="H">Python: Intermediate </span></i>
+              </p>
+
 
           </div>
         </section>
@@ -319,28 +353,11 @@
             </div>
           </div>
         </section>
-        <!--Skills Section-->
-        <section id="No5">
-          <div class="flex-container">
-            <h2 data-aos="fade-right"             data-aos-offset="500"
-            data-aos-duration="3000"><span class="sub">My</span> Skills</h2>
-            <div class="icons-container">
-              <i class="fab fa-html5 fa-5x" id="b"></i>
-              <h6 class="skills">HTML 5 <br><span class="skilllevel">intermediate</span></h6>
-              <i class="fab fa-css3-alt fa-5x" id="b"></i>
-              <h6 class="skills">CSS 3 <br><span class="skilllevel">intermediate</span></h6>
-              <i class="fab fa-js-square fa-5x" id="b"></i>
-              <h6 class="skills">Javascript <br><span class="skilllevel">Beginner</span></h6>
-              <i class="fab fa-python fa-5x" id="b"></i>
-              <h6 class="skills">Python <br><span class="skilllevel">intermediate</span></h6>
-            </div>
-          </div>
-        </section>
         <!--Contact Section-->
         <section class="section" id="No6">
           <h2 data-aos="fade-right"             data-aos-offset="500"
           data-aos-duration="3000">Contact <span class="sub">Me</span></h2>
-
+        <div class="formstuff">
           <form
             id="form"
             action="https://formspree.io/f/mleajjaa"
@@ -398,9 +415,11 @@
             </div>
 
             <!-- Button -->
-            <button class="input" type="submit">Send</button>
+            <button id="button" class="input" type="submit">Send</button>
           </form>
-        </section>
+        
+        </div>
+      </section>
       </div>
     </main>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.0/fullpage.min.js"></script>
@@ -416,6 +435,10 @@
       integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
       crossorigin="anonymous"
     ></script>
+
+    <!-- Nav Scripts -->
+    <script src="/js/Nav.js"></script>
+
 
     <!-- Animate on scroll JS -->
     <script>

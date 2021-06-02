@@ -23,7 +23,7 @@ body {
   height: 100vh;
   display: flex;
   background-image: url(/pictures/bwa.jpg);
-  background-position: center;
+  background-position: right;
 }
 
 #No3 {
@@ -43,6 +43,7 @@ body {
 
 #No6 {
   height: 100vh;
+  display: flex;
 }
 
 .hl {
@@ -64,6 +65,14 @@ body {
   color: #f5f3f4;
 }
 
+.ab {
+  padding-top: 16%;
+}
+
+.PP {
+  padding-top: 17%;
+}
+
 .namea {
   font-size: 30px;
   font-family: "Montserrat";
@@ -71,6 +80,7 @@ body {
 
 .header {
   position: fixed;
+  font-size: 1rem;
   top: 3%;
   right: 85%;
   color: #f5f3f4;
@@ -177,9 +187,9 @@ h2 {
 
 .bio {
   display: inline-block;
-  width: fit-content;
+  width: 70%;
+  margin-left: 20%;
   padding: 1rem;
-  margin-right: 30%;
   font-size: 130%;
   font-weight: 800;
   color: white;
@@ -196,15 +206,30 @@ h2 {
   background-color: #c32865;
 }
 
-.skills {
-  font-size: 4rem;
-  color: #f5f3f4;
+.Skills {
+  display: inline-block;
+  width: 70%;
+  margin-left: 20%;
+  padding: 1rem;
+  font-size: 130%;
+  font-weight: 800;
+  color: white;
+  text-align: end;
   font-family: "Montserrat";
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
-  align-items: center;
+  background: rgba(196, 64, 101, 0.35);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
   transition: 0.3s ease-in;
+}
+
+.Skills:hover {
+  color: white;
+  background-color: #c32865;
+}
+
+.bio:hover {
+  color: white;
+  background-color: #c32865;
 }
 
 .skills:hover {
@@ -239,9 +264,9 @@ h2 {
 
 .passion {
   display: inline-block;
-  width: fit-content;
+  width: 70%;
+  margin-left: 20%;
   padding: 1rem;
-  margin-left: 45%;
   font-size: 130%;
   font-weight: 800;
   color: white;
@@ -275,9 +300,9 @@ h2 {
 
 .education {
   display: inline-block;
-  width: fit-content;
+  width: 70%;
+  margin-left: 20%;
   padding: 1rem;
-  margin-right: 35%;
   font-size: 130%;
   font-weight: 800;
   color: white;
@@ -301,11 +326,26 @@ h2 {
   /* font-weight: bolder; */
   font-size: 3rem;
   font-family: "Comfortaa";
-  padding-right: 40%;
+  padding-right: 38%;
   /* padding-bottom: 30%; */
   height: fit-content;
   margin-bottom: 50%;
   flex: 0 1 150px; /*  No stretching: */
+  margin: 5px;
+}
+
+.T4 {
+  color: white;
+  text-transform: uppercase;
+  /* font-size: 2rem; */
+  /* font-weight: bolder; */
+  font-size: 3rem;
+  font-family: "Comfortaa";
+  padding-right: 78%;
+  /* padding-bottom: 30%; */
+  height: fit-content;
+  margin-bottom: 50%;
+  flex: 0 1 150px;
   margin: 5px;
 }
 
@@ -314,25 +354,19 @@ h2 {
   flex-wrap: wrap;
 }
 
+.H {
+  font-family: "Montserrat";
+}
+
 #b {
   color: #f5f3f4;
   transition: 0.3s ease-in;
   display: flex;
+  justify-content: space-between;
   margin-right: 1rem;
 }
 
-#b:hover {
-  color: #c32865;
-}
-
-.flex-container {
-  width: 100%;
-  display: flex;
-}
-
 .icons-container {
-  background: url(https://i.picsum.photos/id/1074/5472/3648.jpg?hmac=w-Fbv9bl0KpEUgZugbsiGk3Y2-LGAuiLZOYsRk0zo4A);
-  background-position-x: center;
   width: 50%;
   height: 61.2rem;
   display: flex;
@@ -359,16 +393,16 @@ h2 {
   padding: 5% 10%;
   border: none;
   margin-bottom: 5%;
-  width: fit-content;
+  width: 130%;
   outline: none;
 }
 
-button {
+#button {
   border: none;
   color: #f5f3f4;
   transition: 0.3s ease-in;
 }
-button:hover {
+#button:hover {
   background-color: #c32865;
 }
 
@@ -531,6 +565,61 @@ h4 {
   color: #c32865;
 }
 
+.formstuff {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 30%;
+}
+
+a {
+  text-decoration: none;
+  color: #f5f3f4;
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  transition: 0.5s ease-in;
+}
+
+a:hover {
+  color: #c32865;
+}
+
+.nav {
+  z-index: 99999;
+  position: fixed;
+  right: -100%;
+  bottom: 50%;
+  transition: 0.5s ease-in;
+  padding: 5px;
+  background: rgba(28, 28, 28, 0.45);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  list-style: none;
+}
+
+.nav.show-menu {
+  right: 60px;
+  transition: 0.5s ease-in;
+}
+
+.Navb {
+  color: #f5f3f4;
+  border: none;
+  outline: none;
+  display: block;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: none;
+  transition: 0.5s ease-in;
+  z-index: 999;
+}
+
+.Navb:hover {
+  color: #c32865;
+}
+
 @media screen and (max-width: 1490px) {
   #No1 {
     height: 100vh;
@@ -574,19 +663,48 @@ h4 {
     z-index: 9999;
   }
 
-  .footer {
-    display: flex;
-    justify-content: space-between;
-    width: 90vw;
-    position: absolute;
-    bottom: 3%;
-    right: 5%;
-    z-index: 9999;
-    color: #f5f3f4;
-  }
-
   .namea {
     font-size: 30px;
     font-family: "Montserrat";
+  }
+
+  #No2 {
+    background-position: center;
+  }
+
+  .bio {
+    font-size: 170%;
+  }
+
+  .passion {
+    display: inline-block;
+    width: 70%;
+    margin-left: 20%;
+    padding: 1rem;
+    font-size: 150%;
+    font-weight: 800;
+    color: white;
+    text-align: end;
+    font-family: "Montserrat";
+    background: rgba(196, 64, 101, 0.35);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    transition: 0.3s ease-in;
+  }
+
+  .passion:hover {
+    color: white;
+    background-color: #c32865;
+  }
+
+  .education {
+    font-size: 170%;
+  }
+
+  .formstuff {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 15%;
   }
 }
