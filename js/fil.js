@@ -62,7 +62,7 @@ let projects = [
 
 function createCard(card) {
   let createdCard = `<div data-aos="fade-down-right"             data-aos-offset="500"
-  data-aos-duration="3000" class="card1 ${card.class}" techStack=${card.techStack} >
+  data-aos-duration="3000" class="card1" techStack=${card.techStack} >
         <img src="${card.imgURL}" alt="${card.imgALT}" class="card-img">
         <h4>${card.title}</h4>
         <h6>${card.techStack}</h6>

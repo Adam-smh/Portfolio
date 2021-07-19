@@ -631,11 +631,20 @@ a:hover {
   border: none;
   outline: none;
   font-size: 4rem;
+  transition: 0.5s ease-in;
+}
+
+.filtersb:hover {
+  color: #c32865;
 }
 
 @media screen and (max-width: 1490px) {
   #No1 {
     height: 100vh;
+  }
+
+  .NO2 {
+    width: 80vw;
   }
 
   h2 {
@@ -725,7 +734,7 @@ a:hover {
 @media screen and (max-width: 400px) {
   #No1 {
     height: 168vh;
-    width: 117vh;
+    width: 108vh;
   }
 
   .email {
@@ -893,4 +902,9 @@ a:hover {
     height: 167vh;
     display: flex;
   }
+}
+
+
+@media screen and (max-width: 750px) {
+  
 }
