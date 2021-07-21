@@ -58,10 +58,20 @@ let projects = [
     githubURL: "https://github.com/Adam-smh/Recursion",
     liveProjectURL: "https://replit.com/@Adamsmh/Recursion",
   },
+  {
+    imgURL: "./projects/pokedex.png",
+    imgALT: "My Project 7",
+    title: "Pokedex",
+    techStack: "JavaScript",
+    description:
+      "This is a pokedex used to showcase my skill in Javascript. Cover page is pure CSS.",
+    githubURL: "https://github.com/Adam-smh/Pokedex",
+    liveProjectURL: "https://adams-pokedex.netlify.app/",
+  },
 ];
 
 function createCard(card) {
-  let createdCard = `<div data-aos="fade-down-right"             data-aos-offset="500"
+  let createdCard = `<div data-aos="fade-down-right"
   data-aos-duration="3000" class="card1" techStack=${card.techStack} >
         <img src="${card.imgURL}" alt="${card.imgALT}" class="card-img">
         <h4>${card.title}</h4>

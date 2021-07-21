@@ -727,14 +727,13 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 15%;
+    padding-left: 5%;
   }
 }
 
 @media screen and (max-width: 400px) {
   #No1 {
     height: 168vh;
-    width: 108vh;
   }
 
   .email {
@@ -764,25 +763,25 @@ a:hover {
     font-family: sans-serif;
     color: #f5f3f4;
     font-size: 5rem;
-    min-height: 65vh;
-    padding-left: 7%;
+    min-height: 66vh;
+    padding-left: 33%;
     padding-top: 20%;
     text-transform: uppercase;
   }
 
   .hl {
-    position: absolute;
-    left: 35%;
-    top: 70%;
+    /* position: absolute; */
+    left: 20%;
+    top: 67%;
     z-index: -99999;
-    width: 90%;
+    width: 124%;
   }
 
   .T,
   .T2,
   .T3,
   .T4 {
-    padding-right: 0%;
+    font-size: 2rem;
   }
 
   .Skills {
@@ -790,7 +789,7 @@ a:hover {
     /* width: 70%; */
     margin-left: 0%;
     padding: 1rem;
-    font-size: 100%;
+    font-size: 87%;
     font-weight: 800;
     color: white;
     text-align: end;
@@ -884,7 +883,7 @@ a:hover {
     flex-wrap: wrap;
     width: 100%;
     padding-top: 10%;
-    padding-left: 32%;
+    padding-left: 0%;
     padding-bottom: 10%;
   }
   .input {
@@ -904,7 +903,22 @@ a:hover {
   }
 }
 
-
-@media screen and (max-width: 750px) {
-  
+@media screen and (max-width: 1024px) {
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    width: 90vw;
+    position: fixed;
+    bottom: 17%;
+    right: 5%;
+    z-index: 9999;
+    color: #f5f3f4;
+  }
+  .hl {
+    position: absolute;
+    right: 16%;
+    top: 33%;
+    z-index: -99999;
+    width: 60%;
+  }
 }
