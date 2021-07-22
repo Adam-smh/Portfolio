@@ -731,6 +731,12 @@ a:hover {
   }
 }
 
+@media screen and (max-width: 1024px) {
+  #No1 {
+    height: 140vh;
+  }
+}
+
 @media screen and (max-width: 400px) {
   #No1 {
     height: 168vh;
@@ -920,5 +926,44 @@ a:hover {
     top: 33%;
     z-index: -99999;
     width: 60%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    width: 155vw;
+    position: fixed;
+    bottom: 15%;
+    right: 3%;
+    z-index: 9999;
+    color: #f5f3f4;
+  }
+  .hl {
+    position: absolute;
+    left: 17%;
+    top: 70%;
+    z-index: -99999;
+    width: 121%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .hl {
+    position: absolute;
+    left: 25%;
+    top: 71%;
+    z-index: -99999;
+    width: 109%;
+  }
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    width: 155vw;
+    position: fixed;
+    bottom: 3%;
+    right: 3%;
+    z-index: 9999;
+    color: #f5f3f4;
   }
 }
