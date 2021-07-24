@@ -53,7 +53,7 @@ body {
 
 .hl {
   position: absolute;
-  right: 20%;
+  right: 10%;
   top: 10%;
   z-index: -99999;
   width: 40%;
@@ -87,7 +87,7 @@ body {
   position: fixed;
   font-size: 1rem;
   top: 3%;
-  right: 85%;
+  right: 79%;
   color: #f5f3f4;
   z-index: 9999;
 }
@@ -638,12 +638,6 @@ a:hover {
   color: #c32865;
 }
 
-@media screen and (max-width: 1836px) {
-  #No1 {
-    height: 100vh;
-  }
-}
-
 @media screen and (max-width: 1035px) {
   .formstuff {
     display: flex;
@@ -664,12 +658,8 @@ a:hover {
 }
 
 @media screen and (max-width: 1490px) {
-  #No1 {
-    height: 100vh;
-  }
-
   .NO2 {
-    width: 80vw;
+    width: 90vw;
   }
   h2 {
     display: flex;
@@ -684,7 +674,7 @@ a:hover {
   .header {
     position: fixed;
     top: 3%;
-    right: 55%;
+    right: 79%;
     color: #f5f3f4;
     z-index: 9999;
   }
@@ -698,13 +688,6 @@ a:hover {
   body {
     background: black;
     overflow-x: hidden;
-  }
-  .header {
-    position: fixed;
-    top: 3%;
-    right: 75%;
-    color: #f5f3f4;
-    z-index: 9999;
   }
   .namea {
     font-size: 30px;
@@ -741,9 +724,6 @@ a:hover {
 }
 
 @media screen and (max-width: 1024px) {
-  #No1 {
-    height: 100vh;
-  }
   .footer {
     display: flex;
     justify-content: space-between;
@@ -756,16 +736,33 @@ a:hover {
   }
   .hl {
     position: absolute;
-    right: 0%;
-    top: 15%;
+    right: 6%;
+    top: 27%;
     z-index: -99999;
-    width: 34%;
+    width: 25%;
   }
 }
 
-@media screen and (max-width: 401px) {
+@media screen and (max-width: 856px) {
+  .hl {
+    position: absolute;
+    right: 31%;
+    top: 48%;
+    z-index: -99999;
+    width: 36%;
+  }
+  .header {
+    position: fixed;
+    top: 3%;
+    right: 64%;
+    color: #f5f3f4;
+    z-index: 9999;
+  }
+}
+
+@media screen and (max-width: 425px) {
   #No1 {
-    height: 168vh;
+    height: 167vh;
   }
 
   .email {
@@ -960,7 +957,7 @@ a:hover {
     justify-content: space-between;
     width: 155vw;
     position: fixed;
-    bottom: 15%;
+    bottom: 3%;
     right: 3%;
     z-index: 9999;
     color: #f5f3f4;
