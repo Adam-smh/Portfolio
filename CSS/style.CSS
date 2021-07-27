@@ -317,27 +317,19 @@ h2 {
 .T3 {
   color: white;
   text-transform: uppercase;
-  /* font-size: 2rem; */
-  /* font-weight: bolder; */
   font-size: 3rem;
   font-family: "Comfortaa";
-  /* padding-right: 38%; */
-  /* padding-bottom: 30%; */
   height: fit-content;
   margin-bottom: 50%;
-  flex: 0 1 150px; /*  No stretching: */
+  flex: 0 1 150px;
   margin: 5px;
 }
 
 .T4 {
   color: white;
   text-transform: uppercase;
-  /* font-size: 2rem; */
-  /* font-weight: bolder; */
   font-size: 3rem;
   font-family: "Comfortaa";
-  /* padding-right: 78%; */
-  /* padding-bottom: 30%; */
   height: fit-content;
   margin-bottom: 50%;
   flex: 0 1 150px;
@@ -417,9 +409,6 @@ h2 {
 #No4 .fp-tableCell {
   display: flex;
 }
-/*.Tcontainer{
-  max-width: 20%;
-}*/
 
 .txtcontainer {
   display: flex;
