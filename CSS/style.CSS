@@ -942,6 +942,9 @@ a:hover {
     z-index: 9999;
     color: #f5f3f4;
   }
+  .NO2 {
+    width: 103vw;
+  }
 }
 
 @media screen and (max-width: 375px) {
