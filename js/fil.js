@@ -78,8 +78,8 @@ function createCard(card) {
         <h6>${card.techStack}</h6>
         <p class="card-details">${card.description}</p>
         <div class="button">
-        <a target="_blank" href="${card.githubURL}"><i class="fab fa-github fa-2x"></i></a>
-        <a target="_blank" href="${card.liveProjectURL}"><i class="fas fa-globe fa-2x"></i></a>
+        <a class="Pbuttons" target="_blank" href="${card.githubURL}"><i class="fab fa-github fa-2x"></i></a>
+        <a class="Pbuttons" target="_blank" href="${card.liveProjectURL}"><i class="fas fa-globe fa-2x"></i></a>
         </div>
       </div>
       `;
