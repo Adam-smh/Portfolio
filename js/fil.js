@@ -10,6 +10,16 @@ let projects = [
     liveProjectURL: "https://distracted-austin-cdffd8.netlify.app",
   },
   {
+    imgURL: "./projects/Ersipe8.png",
+    imgALT: "Ecommerce Site",
+    title: "Erispe8",
+    techStack: "JavaScript",
+    description:
+      "An Ecommerce site that predominately uses JS however there are also uses of Python, sql, flask, CSS and Html.",
+    githubURL: "https://github.com/Adam-smh/final-EoMP2",
+    liveProjectURL: "https://erispe8.netlify.app/",
+  },
+  {
     imgURL: "./projects/CF.png",
     imgALT: "My Project 2",
     title: "Contact Form",

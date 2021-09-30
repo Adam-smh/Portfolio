@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Girassol&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=WindSong&display=swap");
 * {
   padding: 0%;
   margin: 0%;
@@ -215,6 +216,9 @@ body {
   transition: 0.5s ease-in;
 }
 
+.kieran {
+  font-family: "WindSong", cursive;
+}
 #No1 {
   height: 100vh;
 }
@@ -539,6 +543,7 @@ h2 {
 
 .H {
   font-family: "Montserrat";
+  font-weight: 400;
 }
 
 #b {
